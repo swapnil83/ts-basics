@@ -1,0 +1,59 @@
+What is typescript?
+
+A programming language
+free and open-source
+developed by Microsoft
+
+====================================================================================================================
+
+Why typescript?
+
+Problems of JS
+
+1. not defining specific type to the variables
+
+Example: 
+var a = 'hello';
+a = 10;
+a = true;
+
+Explanation: JS will not complain about the assignment of different values to the same variable
+
+
+2. Functionality
+
+Example: 
+function add(a, b) {
+    return a + b;
+}
+
+add(1, 2) ===> 3
+add(1) ===> NaN
+add(1, 3, 7) ===> 4
+
+Explanation: JS will not throw when insufficient or excess arguments you passed to the function
+
+3. Object property addition restriction
+
+Example: 
+
+const person = { 
+    firstName: 'Ravi',
+    lastName: 'Bopara'
+};
+
+person.age = 21;
+
+Explanation: A class concept is availabe in JS but it internally uses prototypical inheritance
+unlike other languages like C, CPP or Java it will not assign through constructor only 
+so it add restriction to the objects
+
+====================================================================================================================
+
+TS --> JS (using transpilation)
+
+Transpilation: TS code is getting conveted into JS code or ES6 code is converted into ES5
+Compilation: High level code (JS) is getting converted into low level code (machine code)
+
+TS === JS + types
+
